@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/bookstore/main",
+    "pages/recommend/main",
+    "pages/bookrack/main",
+    "pages/index/main",
+    "pages/logs/main",
+    "pages/counter/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "happy阅读",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+    "list": [{
+      "text": "推荐",
+      "pagePath": "pages/recommend/main",
+      "iconPath": "static/tabs/recommend.png",
+      "selectedIconPath": "static/tabs/recommend-on.png"
+    }, {
+      "text": "书城",
+      "pagePath": "pages/bookstore/main",
+      "iconPath": "static/tabs/book-store.png",
+      "selectedIconPath": "static/tabs/book-store-on.png"
+    },{
+      "text": "书架",
+      "pagePath": "pages/bookrack/main",
+      "iconPath": "static/tabs/bookrack.png",
+      "selectedIconPath": "static/tabs/bookrack-on.png"
+    }],
+    "position": "bottom"
+  }
+}

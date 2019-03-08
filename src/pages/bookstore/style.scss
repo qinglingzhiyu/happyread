@@ -1,0 +1,52 @@
+.store {
+    // 顶部搜索
+    .search {
+        padding: 10rpx 30rpx;
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        .search-main {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10rpx 30rpx;
+            width: 100%;
+            background-color: rgba(219, 217, 216, 0.2);
+            box-sizing: border-box;
+            .search-txt {
+                color: #80848f;
+            };
+        }
+    };
+
+    //排行榜
+    .rank {
+        margin-top: 50rpx;
+        padding: 0 30rpx;
+        .rank-title {
+            font-size: 32rpx
+        };
+        .rank-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 30rpx;
+           .rank-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 300rpx;
+                background-color: #F2F9FF;
+                image {
+                    width: 100rpx;
+                    height: 150rpx;
+                };
+                span {
+                    font-size: 28rpx;
+                }
+
+            } 
+        }
+    }
+
+}

@@ -1,0 +1,148 @@
+.recommend {
+    .search {
+        padding: 10rpx 30rpx;
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        .search-main {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10rpx 30rpx;
+            width: 100%;
+            background-color: rgba(219, 217, 216, 0.2);
+            box-sizing: border-box;
+            .search-txt {
+                color: #80848f;
+            };
+        }
+    };
+    .index-main {
+        padding: 20rpx 30rpx;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        .index-top-img {
+            width: 100%;
+            height: 200rpx;
+            border-radius: 10rpx;
+        };
+        .todayTitle {
+            margin-top: 30rpx;
+            font-size: 36rpx;
+            font-weight: 700;
+        };
+        .bookCard {
+            margin-top: 30rpx;
+            width: 100%;
+            padding: 40rpx 30rpx;
+            background-color: #fff;
+            border-radius: 20rpx;
+            box-sizing: border-box;
+            box-shadow: 0rpx 1rpx 16rpx rgba(119, 115, 115, 0.2);
+           .card-header {
+               display: flex;
+               justify-content: flex-start;
+               align-items: center;
+               .card-img {
+                   width: 167rpx;
+                   height: 230rpx;
+                   box-shadow: 0 4rpx 10rpx rgb(119, 115, 115)
+               };
+               .card-pith {
+                   margin-left: 32rpx;
+                   .card-title {
+                       font-size: 32rpx;
+                   };
+                   .card-author {
+                       padding: 26rpx 0;
+                       font-size: 20rpx;
+                   };
+                   .readed {
+                       font-size: 28rpx;
+                       .count {
+                           color:rgb(121, 201, 190)
+                       };
+                       .score {
+                           color:rgb(199, 138, 58)
+                       }
+                   }
+               }
+           };
+           .card-synopsis {
+               margin-top: 48rpx;
+               font-size: 28rpx;
+                text-overflow: -o-ellipsis-lastline;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                -webkit-box-orient: vertical;
+           };
+           .card-tag {
+               margin-top: 20rpx;
+               font-size: 20rpx;
+               color: #80848f;
+               span {
+                   padding: 2rpx 10rpx;
+                   border: 1rpx solid #80848f;
+                   margin-right: 10rpx;
+                   border-radius: 4rpx;
+               }
+           };
+           .merit {
+               margin-top: 50rpx;
+               font-size: 28rpx;
+               text-align: center;
+               color: #E8943F;
+           };
+           .card-footer {
+                display: flex;
+                align-items: flex-end;
+                .join-btn {
+                    width: 540rpx;
+                    height: 100rpx;
+                }
+                .join-rack {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80rpx;
+                    height: 80rpx;
+                    border-radius: 50%;
+                    background-color: #F3EDED;
+                    image {
+                        width: 60rpx;
+                        height: 60rpx;
+                    }
+                }
+           } 
+        }
+    };
+    .index-short {
+        padding: 30rpx;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        .short {
+            margin-bottom: 30rpx;
+            background-color: #fff;
+            border-radius: 10rpx;
+            box-shadow: 0rpx 1rpx 16rpx rgba(119, 115, 115, 0.2);
+            .short-bg {
+                display: block;
+                width: 100%;
+                height: 300rpx;
+            };
+            .short-title {
+                font-size: 32rpx;
+                padding: 30rpx;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow:ellipsis;
+            }
+        }
+        
+    }
+}
