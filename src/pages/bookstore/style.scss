@@ -101,7 +101,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            margin-top: 30rpx;
+            margin-top: 10rpx;
             .stack {
                 display: flex;
                 justify-content: space-between;
@@ -109,14 +109,15 @@
                 margin-bottom: 30rpx;
                 padding: 30rpx;
                 width: 268rpx;
-                border: 1rpx solid #aaaeb6;
-                background-color: rgba(204, 206, 211, 0.302);
+                border: 1rpx solid #cecfd3ea;
+                background-color: rgba(204, 206, 211, 0.116);
                 border-radius: 10rpx;
                 .stack-img {
-                    width: 60rpx;
+                    width: 70rpx;
                     height: 100rpx;
                 };
                 .stack-right {
+                    margin-right: 40rpx;
                     .stack-title {
                         font-size: 32rpx;
                     };
@@ -124,10 +125,12 @@
                         font-size: 26rpx;
                         .amount {
                             color: rgb(75, 118, 199);
+                            font-weight: 600;
                         }
                     }
                 }
             }
         }
     }
+    
 }

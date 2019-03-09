@@ -1,0 +1,81 @@
+.book-rack {
+    width: 100%;
+    padding: 30rpx;
+    box-sizing: border-box;
+    //头部
+    .rack-header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center; 
+       padding: 40rpx 30rpx;
+       width: 100%;
+       box-sizing: border-box;
+       border: 1rpx solid #cfcccc;
+       box-shadow: 0 0 20rpx #cfcccc;
+       border-radius: 10rpx;
+       .rack-avatar {
+           width: 100rpx;
+           height: 100rpx;
+            .avatar {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+       };
+       .header-container {
+           width: 445rpx;
+           font-size: 28rpx;
+           .header-text {
+               margin-top: 10rpx;
+               font-size: 22rpx;
+               color: rgb(228, 90, 90);
+           }
+       }
+    };
+
+    //列表
+    .book-list {
+        margin-top: 60rpx;
+        width: 100%;
+        box-sizing: border-box;
+        .book {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding: 25rpx 0;
+            border-bottom: 1rpx solid rgb(194, 189, 189);
+            .book-bg {
+                width: 100rpx;
+                height: 135rpx;
+            };
+            .book-content {
+                width: 395rpx;
+                .book-title {
+                    font-size: 28rpx;
+                };
+                .book-introduce {
+                    margin-top: 25rpx;
+                    font-size: 24rpx;
+                    color: rgb(146, 139, 139);
+                }
+            };
+            .book-skip {
+                text-align: right; 
+                font-size: 24rpx;
+                .update {
+                    display:inline-block;
+                    padding: 0 10rpx;
+                    color: rgb(221, 65, 65);
+                    border: 1rpx solid rgb(221, 65, 65);
+                };
+                .time {
+                    margin-top: 25rpx;
+                    font-size: 22rpx;
+                }
+            };
+        }
+    }
+}
