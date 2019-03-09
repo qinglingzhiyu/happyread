@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/search/main",
     "pages/recommend/main",
     "pages/bookrack/main",
     "pages/bookstore/main",
     "pages/index/main",
     "pages/logs/main",
-    "pages/counter/main",
-    "pages/search/main"
+    "pages/counter/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
