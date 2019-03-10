@@ -35,18 +35,102 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 300rpx;
+                margin-bottom: 30rpx;
+                width: 325rpx;
                 background-color: #F2F9FF;
+                border-radius: 15rpx;
+                box-sizing: border-box;
+                padding: 30rpx;
+                border: 1rpx solid rgb(204, 201, 201);
                 image {
-                    width: 100rpx;
-                    height: 150rpx;
+                    width: 60rpx;
+                    height: 100rpx;
                 };
                 span {
                     font-size: 28rpx;
+                    margin-right: 40rpx;
                 }
 
             } 
         }
-    }
+    };
 
+    //书单
+    .book-list {
+        margin-top: 50rpx;
+        padding: 0 30rpx;  
+        .book-list-title {
+            font-size: 32rpx;
+        };
+        .list-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top:30rpx;
+            padding-bottom: 20rpx;
+            border-bottom: 1rpx solid rgba(199, 197, 197, 0.767);
+            .container-left {
+                width: 500rpx;
+                .container-title {
+                    font-size: 30rpx;
+                };
+                .book-container {
+                    margin-top:58rpx;
+                    font-size: 26rpx;
+                    color: #80848f;
+                }
+            };
+            .book-img {
+                width: 167rpx;
+                height: 167rpx;
+            }
+
+        }
+    };
+
+    //书库
+    .stack-room {
+        margin-top: 50rpx;
+        padding: 0 30rpx; 
+        width: 100%;
+        box-sizing: border-box; 
+        .room-title {
+            font-size: 32rpx;
+        };
+        .stack-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 10rpx;
+            .stack {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30rpx;
+                padding: 30rpx;
+                width: 268rpx;
+                border: 1rpx solid #cecfd3ea;
+                background-color: rgba(204, 206, 211, 0.116);
+                border-radius: 10rpx;
+                .stack-img {
+                    width: 70rpx;
+                    height: 100rpx;
+                };
+                .stack-right {
+                    margin-right: 40rpx;
+                    .stack-title {
+                        font-size: 32rpx;
+                    };
+                    .stack-container {
+                        font-size: 26rpx;
+                        .amount {
+                            color: rgb(75, 118, 199);
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

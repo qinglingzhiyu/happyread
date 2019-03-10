@@ -7,6 +7,7 @@
     padding: 200rpx 0;
     box-sizing: border-box;
 }
+
 page {
     background: #f4f4f4;
     height: 100%;
@@ -19,6 +20,7 @@ button {
     font-size: 32rpx;
     box-sizing: content-box;
 }
+
 button::after {
     border: 0;
 }
@@ -33,6 +35,25 @@ button::after {
     margin: 0;
     padding: 0;
 } */
+.hidden-one {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.hidden-second {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.hidden-third {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
 
 /* 字体 */
 $f20 :20rpx;
