@@ -1,7 +1,16 @@
 <!-- 书架页面-->
 <!-- template source-->
 <template>
-    <div>this is bookrack</div>
+    <div class="bookrack">
+        <div class="rack-header">
+            <open-data type="userAvatarUrl" />
+            <div class="header-container">
+                <!-- <open-data type="userNickName" /> -->
+                <span class="tip">新用户限免: 14小时19分钟</span>
+            </div>
+            <div class="header-skip">></div>
+        </div>
+    </div>
 </template>
 
 <!-- script source -->
