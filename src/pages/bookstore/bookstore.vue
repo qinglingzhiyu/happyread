@@ -14,7 +14,7 @@
         <div class="rank">
             <div class="rank-title">排行榜</div>
             <div class="rank-container">
-                <div class="rank-item">
+                <div class="rank-item" @click="goPageWithBookstore">
                     <image mode="aspectFill" src="/static/images/book-img.jpg"></image>
                     <span>热搜榜</span>
                 </div>
@@ -117,7 +117,12 @@ export default {
     },
     components: { },
 
-    methods: {  },
+    methods: {
+        //跳转到booklist
+        goPageWithBookstore: async function () {
+            this.$promisify.jumpToPromisify('booklist')
+        }
+    },
 
     computed: {  }
 

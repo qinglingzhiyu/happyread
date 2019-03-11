@@ -21,7 +21,7 @@
         <scroll-view :hidden="tabCurrent !== 'man'" :scroll-y="true" class="index-main">
             <image mode="aspectFill" class="index-top-img" src="/static/images/mybook.jpg"/>
             <div class="todayTitle">今日推荐</div>
-            <div class="bookCard">
+            <div class="bookCard" @click="goPageWithDetail">
                 <div class="card-header">
                     <image class="card-img" mode="aspectFill" src="/static/images/book-img.jpg"></image>
                     <div class="card-pith">
@@ -406,7 +406,14 @@ export default {
         //跳转到搜索页面
         goPagewithSearch:async function () {
             this.$promisify.jumpToPromisify('search')
+        },
+
+        //跳转到详情页面
+        goPageWithDetail: async function () {
+            this.$promisify.jumpToPromisify('readdetail')
         }
+
+
     },
 
     computed: {  }

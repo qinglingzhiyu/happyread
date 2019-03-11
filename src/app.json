@@ -6,7 +6,9 @@
     "pages/bookstore/main",
     "pages/index/main",
     "pages/logs/main",
-    "pages/counter/main"
+    "pages/counter/main",
+    "pages/readdetail/main",
+    "pages/booklist/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

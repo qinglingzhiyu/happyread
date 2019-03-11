@@ -13,6 +13,9 @@
             width: 100%;
             background-color: rgba(219, 217, 216, 0.2);
             box-sizing: border-box;
+            .search-input {
+                width: 90%;
+            }
         }
     };
     .hot {
@@ -40,9 +43,10 @@
         display: flex;
         justify-content: space-between;
         align-items: left;
-        width: 100%;
-        padding: 20rpx 30rpx;
+        margin: 30rpx;
+        padding-bottom:30rpx;
         box-sizing: border-box;
+        border-bottom: 1rpx solid rgb(199, 191, 191);
         .book-bg {
             display: block;
             width:115rpx;
@@ -60,24 +64,31 @@
             };
             .book-content {
                 font-size: 24rpx;
+                margin-top: 20rpx;
             }
         };
         .bottom-part {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            margin-top: 20rpx;
             width: 100%;
             color: rgb(192, 179, 179);
             .book-author {
+                display: flex;
+                align-items: center;
                 font-size: 20rpx;
                 .avatar {
-                    width: 20rpx;
-                    height: 20rpx;
+                    width: 30rpx;
+                    height: 30rpx;
                     border-radius: 50%;
+                    margin-right: 10rpx;
                 }
             };
             .book-tag {
                 font-size: 20rpx;
                 span {
+                    margin-left: 10rpx;
                     padding:  2rpx 6rpx;
                     border: 1rpx solid rgb(192, 179, 179);
                 }
