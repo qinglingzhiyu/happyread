@@ -1,0 +1,9 @@
+diff a/src/pages/search/search.vue b/src/pages/search/search.vue	(rejected hunks)
+@@ -0,6 +0,7 @@
+     <div class="search-main">
+         <!-- 顶部搜索 -->
+         <div class="search" @click="goPagewithSearch">
++            <div class="search-main">
+                 <i-icon type="search" size="28" color="#80848f"/>
+                 <input focus type="text" placeholder="请输入书名或者是作者名" />
+             </div>

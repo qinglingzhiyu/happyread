@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/search/main",
     "pages/recommend/main",
+    "pages/search/main",
     "pages/bookrack/main",
     "pages/bookstore/main",
     "pages/index/main",
