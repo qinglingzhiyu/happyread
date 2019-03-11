@@ -3,7 +3,7 @@
 <template>
     <div class="store">
         <!-- 顶部搜索 -->
-        <div class="search">
+        <div class="search" @click="goPagewithSearch">
              <div class="search-main">
                 <i-icon type="search" size="28" color="#80848f"/>
                 <span class="search-txt">搜索</span>
@@ -118,6 +118,12 @@ export default {
     components: { },
 
     methods: {
+
+         //跳转到搜索页面
+        goPagewithSearch:async function () {
+            this.$promisify.jumpToPromisify('search')
+        },
+
         //跳转到booklist
         goPageWithBookstore: async function () {
             this.$promisify.jumpToPromisify('booklist')
