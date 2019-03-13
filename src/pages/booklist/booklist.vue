@@ -1,7 +1,11 @@
 <!-- 书单-->
 <!-- template source-->
 <template>
-    <div>this is book-list</div>
+    <div class="book-list">
+        <div class="list">
+            
+        </div>
+    </div>
 </template>
 
 <!-- script source -->
