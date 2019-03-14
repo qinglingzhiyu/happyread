@@ -69,7 +69,7 @@ const jumpToPromisify = (page = 'index', type = 'navigate', params = '', special
     if (specialUrl) return types[type](params ? `${page}?${params}` : page);
     // 获取跳转参数，如果为数字，则为navigateBack，反之为 navigateTo 或 navigateBack。
     const jumpPram = (typeof page === 'number') ? page : `/pages/${page}/main${params ? `?${params}` : ''}`;
-    //console.log(`%c**跳转参数**jumpPram** ${jumpPram}`, 'color:white;background:green');
+    console.log(`%c**跳转参数**jumpPram** ${jumpPram}`, 'color:white;background:green');
     return types[type](jumpPram);
 }
 

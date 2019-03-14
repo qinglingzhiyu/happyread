@@ -3,7 +3,7 @@
 <template>
     <div class="book-rack">
         <!-- 头部 -->
-        <div class="rack-header">
+        <div class="rack-header" @click="goPageWithPerson">
             <div class="rack-avatar">
                 <open-data class="avatar" type="userAvatarUrl"></open-data>
             </div>
@@ -13,7 +13,7 @@
             </div>
             <div class="rack-skip">></div>
         </div>
-
+        
         <!-- 列表 -->
         <div class="book-list">
             <div class="book">
@@ -74,7 +74,11 @@ export default {
         }
     },
     components: { },
-    methods: {  },
+    methods: {
+        goPageWithPerson: function () {
+            this.$promisify.jumpToPromisify('person')
+        }
+    },
     computed: {  }
 }
 </script>

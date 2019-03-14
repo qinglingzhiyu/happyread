@@ -1,0 +1,65 @@
+.person {
+    
+    .person-header {
+        margin: 30rpx;
+        padding: 20rpx;
+        border: 1rpx solid rgb(207, 200, 200);
+        background-color: rgba(218, 218, 218, 0.068);
+        box-shadow: 0 20rpx 20rpx rgb(204, 204, 204);
+        border-radius: 5rpx;
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .person-avatar {
+                width: 100rpx;
+                height: 100rpx;
+                .avatar {
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+            };
+            .userName {
+                width: 367rpx;
+                font-size: 40rpx;
+            };
+            .charge {
+                padding:0 50rpx;
+                line-height: 72rpx;
+                background-color: rgb(60, 106, 204);
+                text-align: center;
+                border-radius: 50rpx;
+                color: #fff;
+                font-size: 32rpx;
+            }
+        };
+        .header-mid {
+            margin-top: 40rpx;
+            font-size: 20rpx;
+        };
+        .header-bottom {
+            margin-top: 20rpx;
+            font-size: 26rpx;
+            .amount {
+                font-size: 40rpx;
+            }
+        }
+    };
+    .list {
+        margin: 0 30rpx;
+        .setting {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20rpx 0 ;
+            border-bottom: 1rpx solid rgb(180, 180, 180);
+            .title {
+                font-size: 30rpx;
+            }
+        }
+    }
+}

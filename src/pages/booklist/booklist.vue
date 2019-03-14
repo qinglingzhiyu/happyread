@@ -1,24 +1,41 @@
 <!-- 书单-->
 <!-- template source-->
 <template>
-    <div class="book-list">
-        <div class="list">
-            
-        </div>
-    </div>
+    pro
 </template>
 
 <!-- script source -->
 <script type="text/babel">
+import bookcard from '@/components/bookcard'
 export default {
+    onLoad() {
+        let { from } = this.$root.$mp.query;
+        wx.setNavigationBarColor({
+            frontColor: '#000000',
+            backgroundColor: '#f4f4f4',
+        })
+        from && wx.setNavigationBarTitle({
+            title: from
+        })
+    },
+
     onShow() { },
+
+    onReady() { },
+
+    beforeMount() { },
+
     mounted() { },
+
     data() {
         return {
 
         }
     },
-    components: { },
+
+    components: {
+        bookcard
+    },
 
     methods: {  },
 

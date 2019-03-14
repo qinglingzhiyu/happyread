@@ -1,0 +1,25 @@
+.readlist {
+    .read-introduce {
+        padding: 0 30rpx;
+        background-color: #fff;
+        .read-title {
+            font-size: 40rpx;
+            font-weight: 600;
+        };
+        .read-tip {
+            margin-top: 10rpx;
+            font-size: 22rpx;
+            color: rgb(160, 155, 155);
+        };
+        .read-container {
+            margin-top: 30rpx;
+            padding-bottom: 30rpx;
+            font-size: 26rpx;
+        };
+    };
+    .list {
+        margin-top: 30rpx;
+        padding: 0 30rpx;
+        background-color: #fff;
+    }
+}

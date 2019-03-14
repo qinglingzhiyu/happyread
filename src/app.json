@@ -1,14 +1,15 @@
 {
   "pages": [
     "pages/recommend/main",
+    "pages/person/main",
+    "pages/bookstore/main",
+    "pages/readlist/main",
+    "pages/booklist/main",
     "pages/search/main",
     "pages/bookrack/main",
-    "pages/bookstore/main",
     "pages/index/main",
     "pages/logs/main",
-    "pages/counter/main",
-    "pages/readdetail/main",
-    "pages/booklist/main"
+    "pages/counter/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
