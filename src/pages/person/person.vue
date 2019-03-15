@@ -21,15 +21,15 @@
         <div class="list">
             <div class="setting">
                 <text class="title">我的书店</text>
-                <text class="r">></text>
+                <image class="r" src="/static/images/right.png"/>
             </div>
             <div class="setting">
                 <text class="title">帮助中心</text>
-                <text class="r">></text>
+                <image class="r" src="/static/images/right.png"/>
             </div>
             <div class="setting">
                 <text class="title">用户反馈</text>
-                <text class="r">></text>
+                <image class="r" src="/static/images/right.png"/>
             </div>
         </div>
     </div>

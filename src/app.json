@@ -9,7 +9,8 @@
     "pages/bookrack/main",
     "pages/index/main",
     "pages/logs/main",
-    "pages/counter/main"
+    "pages/counter/main",
+    "pages/bookdetail/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

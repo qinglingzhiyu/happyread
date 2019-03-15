@@ -410,10 +410,8 @@ export default {
 
         //跳转到详情页面
         goPageWithDetail: async function () {
-            this.$promisify.jumpToPromisify('readdetail')
+            this.$promisify.jumpToPromisify('bookdetail')
         }
-
-
     },
 
     computed: {  }

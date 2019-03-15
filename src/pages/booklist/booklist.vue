@@ -1,7 +1,12 @@
 <!-- 书单-->
 <!-- template source-->
 <template>
-    pro
+    <div class="book-list">
+        <bookcard></bookcard>
+        <bookcard></bookcard>
+        <bookcard></bookcard>
+        <bookcard></bookcard>
+    </div>
 </template>
 
 <!-- script source -->
