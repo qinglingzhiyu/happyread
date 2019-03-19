@@ -15,6 +15,18 @@ const promisify = fn => defaultProps => extraProps => new Promise((resolve, reje
 const loginPromisify =  promisify(wx.login)();
 
 /**
+ * 数据请求
+ * @param {*} params 
+ */
+const requestPromisify = promisify(wx.request)({
+    header: {
+      'Content-Type': 'application/json'
+    },
+    method: 'GET',
+    complete: () => wx.hideLoading()
+});
+
+/**
  * 用法:
  * jumpToPromisify('a'); // navigateTo到a页面
  * jumpToPromisify('a', 'navigate', { m: 'm' }); // navigateTo到a页面 ,路径参数为?m=m
@@ -57,7 +69,7 @@ const jumpToPromisify = (page = 'index', type = 'navigate', params = '', special
     if (specialUrl) return types[type](params ? `${page}?${params}` : page);
     // 获取跳转参数，如果为数字，则为navigateBack，反之为 navigateTo 或 navigateBack。
     const jumpPram = (typeof page === 'number') ? page : `/pages/${page}/main${params ? `?${params}` : ''}`;
-    //console.log(`%c**跳转参数**jumpPram** ${jumpPram}`, 'color:white;background:green');
+    console.log(`%c**跳转参数**jumpPram** ${jumpPram}`, 'color:white;background:green');
     return types[type](jumpPram);
 }
 
@@ -80,5 +92,6 @@ const obj2Url = params => {
 
 export default {
     loginPromisify,
-    jumpToPromisify
+    jumpToPromisify,
+    requestPromisify
 }

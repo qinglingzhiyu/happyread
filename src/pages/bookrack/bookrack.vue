@@ -3,7 +3,7 @@
 <template>
     <div class="book-rack">
         <!-- 头部 -->
-        <div class="rack-header">
+        <div class="rack-header" @click="goPageWithPerson">
             <div class="rack-avatar">
                 <open-data class="avatar" type="userAvatarUrl"></open-data>
             </div>
@@ -11,9 +11,9 @@
                 <open-data type="userNickName"></open-data>
                 <div class="header-text">新用户限免: 1小时27分钟</div>
             </div>
-            <div class="rack-skip">></div>
+            <image class="rack-skip" src="/static/images/right.png" />
         </div>
-
+        
         <!-- 列表 -->
         <div class="book-list">
             <div class="book">
@@ -74,7 +74,11 @@ export default {
         }
     },
     components: { },
-    methods: {  },
+    methods: {
+        goPageWithPerson: function () {
+            this.$promisify.jumpToPromisify('person')
+        }
+    },
     computed: {  }
 }
 </script>
